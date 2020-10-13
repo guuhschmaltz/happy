@@ -1,7 +1,10 @@
 <h1 align="center"> Next Level Week  #3 - Happy
   
+![](https://github.com/guuhschmaltz/happy/blob/master/design/icon.png)
+  
 ![GitHub language count](https://img.shields.io/github/languages/count/guuhschmaltz/happy) 
 ![GitHub top language](https://img.shields.io/github/languages/top/guuhschmaltz/happy?style=plastic)  
+
 
 </h1>
 
