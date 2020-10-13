@@ -1,0 +1,29 @@
+yarn create react-app web --template typescript
+
+arquivos a deletar:
+
+>readme
+
+>na pasta public deixar apenas o index.html
+
+>limpar o index.html
+
+na pasta src deixar apenas os arquivos:
+App.tsx
+indext.tsx
+react-app-env.d.ts
+
+Deletar todos outros.
+
+No arquivo index.tsx remover o serviceworker
+tirar o index.css
+tirar linhas do servicer worker em baixo
+
+limpar app.tsx
+
+
+yarn add react-icons
+yarn add react-router-dom
+yarn add @types/react-router-dom -D
+yarn add leaflet react-leaflet
+yarn add @types/react-leaflet -D
