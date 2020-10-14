@@ -26,9 +26,9 @@ O Projeto foi idealizado em homenagem ao Dia das Crianças(12 de outubro de 2020
 
 - ### **Pré-requisitos**
 
-  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
-  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador.
-  - É **necessário** possuir o **[Yarn](https://nodejs.org/en/)** instalado no computador.
+  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado.
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado.
+  - É **necessário** possuir o **[Yarn](https://nodejs.org/en/)** instalado.
 
 
 - ### **Instalação**
