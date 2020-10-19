@@ -11,8 +11,8 @@ const City: React.FC<Props> = ({
 }) => {
   return (
     <Container textAlign={textAlign}>
-      <strong>São Luis</strong>
-      <span>Maranhão</span>
+      <strong>Cotia</strong>
+      <span>São Paulo</span>
     </Container>
   );
 };

@@ -50,13 +50,13 @@ function OrphanagesMap() {
       </aside>
 
       <Map
-        center={[-16.7315379, -43.8635254]}
+        center={[-23.6025035,-46.9178382]}
         zoom={14}
         style={{ width: '100%', height: '100%'}}
       >
         {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
         <TileLayer
-          url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+          url={`https://a.tile.openstreetmap.org/{z}/{x}/{y}.png`}
         /> 
 
         {orphanages.map(orphanage => (
