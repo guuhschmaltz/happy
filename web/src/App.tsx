@@ -1,13 +1,13 @@
 import React from 'react';
+
+import './styles/global.css';
+import 'leaflet/dist/leaflet.css';
+
 import Routes from './routes';
-import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <>
-      <GlobalStyles />
-      <Routes />
-    </>
+    <Routes />
   );
 }
 
