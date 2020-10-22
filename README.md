@@ -1,18 +1,18 @@
 <h1 align="center">
     <img alt="Happy" title="Happy" src=".github/logo.svg" />
+    
+   ![GitHub language count](https://img.shields.io/github/languages/count/guuhschmaltz/happy) 
+   ![GitHub top language](https://img.shields.io/github/languages/top/guuhschmaltz/happy?style=plastic) 
+   
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
-
-<p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=15C3D6&labelColor=000000" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
+    
 </p>
 
 <br>
@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
+O Happy é uma aplicação feita na semana do dia das crianças, com intuito de conectar pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
 
 ## 🔖 Layout
 
@@ -42,11 +42,46 @@ Nos links abaixo você encontra o layout do projeto web e também do mobile. Lem
 - [Layout Web](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web)
 - [Layout Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile)
 
-## 🧠 Desafio
+### 🔨 Build
 
-No link a seguir você encontra o guia no Notion referente aos desafios propostos para que você possa percorrer a milha extra e incrementar ainda mais essa aplicação. Lá também você encontra um guia mostrando todo o passo a passo de como realizar o deploy tanto do backend quanto do frontend.
+  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador.
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador.
+  - É **necessário** possuir o **[Expo](ttps://expo.io/)** instalado no computador.
 
-- [Desafio Happy 2.0](https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4)
+```sh
+    # Clonar o repositório
+    $ git clone https://github.com/guuhschmaltz/happy.git
+
+    # Acesse o diretório
+    $ cd happy
+
+```
+#### Web:
+
+```sh
+$ cd web
+$ npm install
+$ npm run start
+```
+
+#### Backend:
+
+```sh
+$ cd backend
+$ npm install
+$ npm run typeorm migration:run
+$ npm run dev
+```
+
+#### Mobile:
+
+```bash
+$ cd mobile
+$ npm install
+$ npm run start
+
+# Escaneie o QR code com o app Expo Client
+```
 
 ## :memo: Licença
 
@@ -54,4 +89,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com ♥ by [me](https://github.com/guuhschmaltz) & [Rockeseat](https://rocketseat.com.br/) :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
