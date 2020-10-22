@@ -1,14 +1,16 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 
-import * as Styles from './styles';
-import mapMarkerImg from '../../images/Local.svg'
+import mapMarkerImg from "../../assets/images/map-marker.svg";
 
-const Sidebar: React.FC = () => {
+import './styles.css';
+
+export default function Sidebar() {
   const { goBack } = useHistory();
+
   return (
-    <Styles.Container>
+    <aside className="sidebar">
       <img src={mapMarkerImg} alt="Happy" />
 
       <footer>
@@ -16,8 +18,6 @@ const Sidebar: React.FC = () => {
           <FiArrowLeft size={24} color="#FFF" />
         </button>
       </footer>
-    </Styles.Container>
+    </aside>
   );
-};
-
-export default Sidebar;
+}

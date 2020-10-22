@@ -1,36 +1,36 @@
 import React from 'react';
+import { Feather } from '@expo/vector-icons';
 import { View, StyleSheet, Text } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
-import { Feather } from "@expo/vector-icons";
-import { useNavigation } from '@react-navigation/native';
+import { StackHeaderProps } from '@react-navigation/stack';
 
-interface HeaderProps {
-  title: string;
+interface HeaderProps extends StackHeaderProps {
   showCancel?: boolean;
+  title: string;
 }
 
-export default function Header({ title, showCancel = true }: HeaderProps) {
-  const navigation = useNavigation();
-
-  function handleGoBackToAppHomepage() {
+export default function Header({ showCancel = true, title, navigation }: HeaderProps) {
+  function handleCancelCreateOrphanage() {
     navigation.navigate('OrphanagesMap');
   }
 
-  return(
-    <View style={[styles.container]}>
+  return (
+    <View style={styles.container}>
       <BorderlessButton onPress={navigation.goBack}>
-        <Feather name="arrow-left" size={24} color="#15b6d6" />
+        <Feather name="arrow-left" size={24} color="#15B6D6" />
       </BorderlessButton>
 
       <Text style={styles.title}>{title}</Text>
 
-      { showCancel ? (
-        <BorderlessButton onPress={handleGoBackToAppHomepage}>
-          <Feather name="x" size={24} color="#ff669d" />
-        </BorderlessButton>
-      ) : (
-        <View />
-      )}
+      { showCancel
+        ? (
+          <BorderlessButton onPress={handleCancelCreateOrphanage}>
+            <Feather name="x" size={24} color="#FF669D" />
+          </BorderlessButton>
+        )
+        : (
+          <View />
+        ) }
     </View>
   );
 }
@@ -40,18 +40,17 @@ const styles = StyleSheet.create({
     padding: 24,
     backgroundColor: '#f9fafc',
     borderBottomWidth: 1,
-    borderColor: '#dde3f0',
+    borderColor: '#DDE3F0',
     paddingTop: 44,
 
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-
+    alignItems: 'center'
   },
 
   title: {
     fontFamily: 'Nunito_600SemiBold',
     color: '#8fa7b3',
     fontSize: 16,
-  }
+  },
 })

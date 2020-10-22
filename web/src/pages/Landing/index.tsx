@@ -1,33 +1,31 @@
-import React from 'react';
-import { FiArrowRight } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
-import * as Styles from './styles';
+import logoImg from '../../assets/images/logo.svg';
 
-import logoImg from '../../images/Logo.svg';
-import City from '../../components/City';
+import './styles.css';
 
-const Landing: React.FC = () => {
+export default function Landing() {
   return (
-    <Styles.Container>
-      <Styles.ContentWrapper>
-        <img src={logoImg} alt="Happy"/>
-
+    <div id="page-landing">
+      <div className="content-wrapper">
+        <img src={logoImg} alt="Happy" />
+ 
         <main>
           <h1>Leve felicidade para o mundo</h1>
           <p>Visite orfanatos e mude o dia de muitas crianças.</p>
         </main>
 
-        <Styles.Location>
-          <City textAlign="right"/>
-        </Styles.Location>
+        <div className="location">
+          <strong>Rio do Sul</strong>
+          <span>Santa Catarina</span>
+        </div>
 
-        <Link to="/app" > 
-          <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)"/>
+        <Link to="/app" className="enter-app">
+          <FaArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
         </Link>
-      </Styles.ContentWrapper>
-    </Styles.Container>
+      </div>
+    </div>
   );
-};
-
-export default Landing;
+}
