@@ -39,14 +39,15 @@ O Happy é uma aplicação feita na semana do dia das crianças, com intuito de 
 
 Nos links abaixo você encontra o layout do projeto web e também do mobile. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
 
-- [Layout Web](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web)
-- [Layout Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile)
+- [Layout Web](https://www.figma.com/file/dXu4M57aiF5W4rgr6TdTme/Happy-Web-Copy)
+- [Layout Mobile](https://www.figma.com/file/mmUlvilKBUVnmAXHpmiRtA/Happy-Mobile-Copy)
 
 ### 🔨 Build
 
   - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador.
+  - É **necessário** possuir o **[Expo](https://expo.io/)** instalado no computador.
   - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador.
-  - É **necessário** possuir o **[Expo](ttps://expo.io/)** instalado no computador.
+  
 
 ```sh
     # Clonar o repositório
@@ -75,11 +76,10 @@ $ npm run dev
 
 #### Mobile:
 
-```bash
+```sh
 $ cd mobile
 $ npm install
 $ npm run start
-
 # Escaneie o QR code com o app Expo Client
 ```
 
@@ -89,4 +89,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito com ♥ by [me](https://github.com/guuhschmaltz) & [Rockeseat](https://rocketseat.com.br/) :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com ♥ by [Me](https://github.com/guuhschmaltz) & [Rockeseat](https://rocketseat.com.br/) :wave: 
+[Participe da comunidade!](https://discordapp.com/invite/gCRAFhc)
